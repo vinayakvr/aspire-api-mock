@@ -1,0 +1,36 @@
+const ID_PREFIX = {
+  LOAN: 'ln_',
+  REPAYMENT: 'rp_',
+  USER: 'usr_',
+};
+
+const LOAN_STASUSES = {
+  PENDING: 'PENDING',
+  APPROVED: 'APPROVED',
+  PAID: 'PAID',
+};
+const REPAYMENT_STATUSES = {
+  PENDING: 'PENDING',
+  PAID: 'PAID',
+}
+const USER_ROLES = {
+  ADMIN: 'ADMIN',
+  CUSTOMER: 'CUSTOMER',
+}
+
+const LOAN_STASUSES_LIST = Object.keys(LOAN_STASUSES).map((key) => LOAN_STASUSES[key]);
+const REPAYMENT_STASUSES_LIST = Object.keys(REPAYMENT_STATUSES).map((key) => REPAYMENT_STATUSES[key]);
+const USER_ROLES_LIST = Object.keys(USER_ROLES).map((key) => USER_ROLES[key]);
+
+const X_USER_ID = 'x-user-id';
+
+module.exports = {
+  ID_PREFIX,
+  LOAN_STASUSES,
+  LOAN_STASUSES_LIST,
+  REPAYMENT_STATUSES,
+  REPAYMENT_STASUSES_LIST,
+  USER_ROLES,
+  USER_ROLES_LIST,
+  X_USER_ID,
+}
